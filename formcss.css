@@ -1,0 +1,112 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+    background-image: url("https://images.designtrends.com/wp-content/uploads/2016/04/05100251/Sports-Basketball-Wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    text-align: center;
+    color:black;
+   
+}
+p{
+   
+    border:1px black;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo{
+    background-image: url("logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left:60%;
+    height:150px;
+    width:150px;
+}
+.form{
+   background-image: url("pattern-grey.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:60vh;
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    border:2px solid antiquewhite;
+    margin-left:40%;
+}
+.heading{
+    color:white;
+    background-color:black;
+    padding:8px;
+}
+input[type="reset"],input[type="submit"]{
+    color:white;
+    background-color:black;
+    padding:10px 20px;
+    border:none;
+    border-radius: 4px;
+    cursor:pointer;
+    width:45%;
+   
+}
+input[type="reset"]:hover{
+    background-color: darkgray;
+    color:black;
+}
+input[type="submit"]:hover{
+    background-color: darkgray;
+    color:black;
+}
+input[type="text"],
+input[type="email"],
+input[type="radio"],
+input[type="checkbox"]{
+    background-color:white;
+   
+    padding:6px;
+   
+}
+.privacy_policy{
+font-size:0.9rem;
+color:lightblack;
+font-weight:400;
+}
+.privacy_policy span{
+    color:#1081b6;
+    font-weight: 500;
+    cursor:pointer;
+}
+/* .navi{
+    float:right;
+    background-color: whitesmoke;
+    color:black;
+    padding:8px;
+} */
+ul {
+    margin-left:310px;
+
+  }
+  li{
+      float:left;
+      list-style-type: none;
+    padding: 10px;
+    overflow: hidden;
+    background-color:lightgray;
+    border-radius: 5%;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color:black;
+    border-radius: 5%;
+    color:white;
+  }
+  

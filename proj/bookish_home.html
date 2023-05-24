@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookish- Home</title>
+    <link rel="stylesheet" href="bookish_css.css">
+    <script src="bookish_js.js"></script>
+
+    <script src="https://kit.fontawesome.com/c04a233785.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-1">
+            <a href="#" class="logo"><i class="fa-solid fa-book"></i>bookish</a>
+            <form action="#" class="search-form">
+                <input type="search" name="" placeholder="search here..." id="search-box">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+            </form>
+            <div class="icons">
+                <div id="searchbtn" class="fa-solid fa-magnifying-glass"></div>
+                <a href="#" class="fa-regular fa-heart"></a>
+                <a href="#" class="fa-solid fa-cart-shopping"></a>
+                <div id="login-btn" class="fa-regular fa-user" onclick="openNav()"></div>
+            </div>
+        </div>
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#featured">featured</a>
+                <a href="#arrivals">arrivals</a>
+                <a href="#reviews">reviews</a>
+                <a href="#blogs">blogs</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <nav class="bottom-navbar">
+        <a href="#home"><i class="fa-solid fa-house"></i></a>
+        <a href="#featured"><i class="fa-solid fa-list"></i></a>
+        <a href="#arrivals"><i class="fa-solid fa-tag"></i></a>
+        <a href="#reviews"><i class="fa-solid fa-comments"></i></a>
+        <a href="#blogs"><i class="fa-brands fa-blogger-b"></i></a>
+    </nav>
+
+    <div id="myNav" class="overlay">
+        <div id="close" class="fa-solid fa-circle-xmark"></div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <form action="">
+                <h3>sign in</h3>
+                <span>username:</span>
+                <input type="email" name="" placeholder="your email" class="box">
+                <span>password:</span>
+                <input type="password" name="" placeholder="your password" class="box">
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="remember-me">
+                    <label for="remember-me">remember me</label>
+                </div>
+                <input type="submit" value="sign in" class="btn">
+                <p>forgot password ?<a href="#">click here</a></p>
+                <p>don't have an account ?<a href="#">create one</a></p>
+
+        </div>
+        </form>
+    </div>
+
+    <section class="home" id="home">
+        <div class="rew">
+            <div class="content">
+                <h3>Upto 75% off</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat assumenda quidem voluptates dolor
+                    optio quibusdam distinctio dignissimos eos, molestiae odit odio qui non praesentium iure animi
+                    repellendus ut provident illo!</p>
+                <a href="#" class="btn">shop now</a>
+            </div>
+
+            <div class="books-slider">
+                <div class="wrapper">
+                    <a href="#"><img
+                            src="https://1.bp.blogspot.com/_ofB7Uy1BQ7I/TKjV7C9C8VI/AAAAAAAAAVU/UmR9Z1C08qg/s1600/meluha.jpg"
+                            alt=""></a>
+                    <a href="#"><img
+                            src="http://4.bp.blogspot.com/-puL3q8z17Z4/ToF-qoop-VI/AAAAAAAAAmk/W5uDi9BmmQc/s1600/the-secret-of-the-nagas.jpg"
+                            alt=""></a>
+                    <a href="#"><img src="https://i.pinimg.com/originals/d9/b3/ab/d9b3ab6557f3d66489399ada4f6fb349.jpg"
+                            alt=""></a>
+                    <a href="#"><img src="http://indiannerve.com/wp-content/uploads/2015/01/scion-of-ikshvaku.jpg"
+                            alt=""></a>
+                    <a href="#"><img
+                            src="http://indiannerve.com/wp-content/uploads/2017/05/Sita_TheWarriorOfMithila.jpg"
+                            alt=""></a>
+                    <a href="#"><img src="https://i.ebayimg.com/images/g/ZYgAAOSwq3pgfJnn/s-l300.jpg" alt=""></a>
+                </div>
+                <img src="" alt="" class="stand">
+            </div>
+        </div>
+    </section> 
+
+    <!-- <span style="font-size:30px;cursor:pointer;color:aqua ;" onclick="openNav()">&#9776; open</span> -->
+    <!-- <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
+
+
+</body>
+
+</html>

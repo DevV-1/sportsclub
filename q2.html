@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3</title>
+<style>
+    body{
+        background-color: black;
+        color: wheat;
+    }
+form{
+padding: 20px;
+background-color:aliceblue;
+color: black;
+
+}
+div{
+padding: 20px;
+background-color: antiquewhite;
+color: black;
+
+}
+p{
+padding:20px;
+background-color:aquamarine;
+color: black;
+
+}
+</style>
+</head>
+<body>
+<form id="form">
+Course
+<div id="span" onclick="event.stopPropagation()">
+Reg Number
+<p id="text" onclick="event.stopPropagation()">
+Name
+</p>
+</div>
+</form>
+<h1 id="name">-</h1>
+<h1 id="reg">-</h1>
+<h1 id="course">-</h1>
+<script>
+document.getElementById('text').addEventListener('click', function(){
+document.getElementById("name").innerHTML="Vinkle Devgan";
+});
+document.getElementById('span').addEventListener('click', function(){
+document.getElementById("reg").innerHTML="12002585";
+});
+document.getElementById('form').addEventListener('click', function(){
+document.getElementById("course").innerHTML="Btech INT219";
+});
+</script>
+</body>
+</html>

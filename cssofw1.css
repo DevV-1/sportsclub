@@ -1,0 +1,22 @@
+nav {
+    
+    background-color: aqua;
+    overflow:hidden;
+}
+nav a{
+    text-decoration: none;
+    text-align: center;
+    color:blueviolet;
+    float:left;
+    padding:20px;
+    
+}
+nav a:hover{
+    color:white;
+    text-decoration: underline red;
+
+}
+nav a:visited{
+    color:seagreen;
+    text-decoration: silver underline;
+}

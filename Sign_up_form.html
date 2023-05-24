@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="formcss.css">
+</head>
+<body>
+    <p class="logo">-</p>
+    <div class="form">
+        <form name="Form" onsubmit="return(validForm());" action="https://formspree.io/f/xgeqqbye"
+        method="POST">
+
+            <h1 class="heading">SIGN-UP NOW</h1>
+            <h2>Please Fill the Form</h2>
+            
+            <p>Name:*  <input type="text" id="name" name="message" placeholder="Your Name"></p>
+            <p>Email:*  <input type="email" id="email" name ="email" placeholder="Your email id"></p>
+            <fieldset>
+                <legend>Select Games of your Interest</legend> 
+                
+                Cricket <input type="radio" name"cricket" id="cricket">
+                Badminton <input type="radio" name"Badminton" id="Badminton">
+                Volleyball <input type="radio" name"Volleyball" id="Volleyball">
+                Football <input type="radio" name"Football" id="Football">
+                Swimming <input type="radio" name"Swimming" id="Swimming">
+                
+                </fieldset>
+           <p><input type="checkbox" class="agree" checked>
+           <label for="agree" class="agree"> I want to receive promotion mails and other information related to club.</label></p>
+           <p><label class="privacy_policy">By clicking the Submit button, you agree to our <span><a class="terms" target="_blank" href="https://www.wonder.legal/us/modele/terms-conditions-website">Terms & Conditions</a></span> and <span><a class="terms" target="_blank"s href="https://www.andamen.com/privacy-policy?utm_source=google&utm_medium=cpc&utm_campaign=&gclid=Cj0KCQjwse-DBhC7ARIsAI8YcWLdT2BQmIeuZlpYbP8f6gRX_tB6pkG6GzjUp-9rDxuDtRRocgFqyYYaAviVEALw_wcB">Privacy Policy</a></span>.</label></p>
+           <p class="buttons">
+            <input type="submit" value="submit">
+            <input type="reset" value="Reset">
+           </p>
+        </form></div>
+        <script>
+            function validForm()
+         {
+         
+            if( document.getElementById("name").value== "" )
+            {
+               alert( "Please provide your name!" );
+               document.getElementById("name").focus() ;
+               return false;
+            }
+             var email = document.getElementById("email").value;
+            atpos = email.indexOf("@");
+            dotpos = email.lastIndexOf(".");       
+            if (document.getElementById("email").value == "" || atpos < 1 || ( dotpos - atpos < 2 )) 
+            {
+               alert("Please enter correct email")
+               document.getElementById("email").focus() ;
+               return false;
+            }
+        }
+            </script>
+ 
+     
+ <nav>
+    <ul>
+        <li><a target="_blank" href="index.html">Home</a></li>
+        <li><a target="_blank" href="calender.html">Calender</a></li>
+        <li><a target="_blank" href="gallery.html">Gallery</a></li>
+        <li><a target="_blank" href="membership.html">Membership</a></li>
+        <li><a target="_blank" href="contact_us.html">Contact Us</a></li>
+        
+    </ul>
+</nav>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Original Surfer';
+            background-color: #12172b;
+            color: white;
+            font-size: larger;
+
+        } 
+
+        h1 {
+            color: lightyellow;
+            width: 45%;
+            text-decoration: lightyellow underline;
+        }
+
+        h4 {
+            color: aqua;
+            text-decoration: aqua underline;
+        }
+
+        .container{
+            background-color: beige;
+        }
+
+        .heading {
+            font-size: 40px;
+            text-decoration: none;
+            margin-left: 550px;
+            color: black;
+        }
+
+        .heading span {
+            font-style: italic;
+            font-size: 30px;
+            text-decoration: black underline;
+        }
+
+        .profiles {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 80px;
+        }
+
+        .profile {
+            flex-basis: 260px;
+        }
+
+        .profile .profile-img {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            cursor: pointer;
+            filter: grayscale(0);
+        }
+
+        .profile:hover .profile-img {
+            filter: grayscale(100%);
+        }
+
+        .upperpart {
+            display: flex;
+        }
+
+        .mainabt {
+            width: 45%;
+            border: aquamarine 2px solid;
+            text-align: justify;
+            padding: 15px;
+            margin: 5px;
+        }
+
+        .working {
+            width: 45%;
+            border: aquamarine 2px solid;
+            text-align: justify;
+            padding: 15px;
+            margin: 5px;
+        }
+
+        #abt {
+            margin-left: 600px;
+            padding: 5px;
+        }
+
+        .sidenav {
+            background-color: aquamarine;
+            color: beige;
+            float: right;
+            padding: 10px;
+        }
+        li {
+            background-color: #12172b;
+            padding: 5px;
+            text-align: center;
+            color: aqua;
+        }
+        .sidenav a:hover{
+            background-color:aqua;
+
+        }
+        .user-name{
+            color:black;
+            margin-left: 20px;
+        }
+        h3{
+            color:black;
+        }
+    </style>
+</head>
+
+<body>
+    <ul type="none" class="sidenav">
+        <li><a target="_blank" class="nav" href="index.html">Home</a></li>
+        <br>
+        <li> <a target="_blank" class="nav" href="membership.html">Clubs</a></li>
+        <br>
+        <li><a target="_blank" class="nav" href="gallery.html">Gallery</a></li>
+        <br>
+        <li><a target="_blank" class="nav" href="Sign_up_form.html">Subscription</a></li>
+        <br>
+        <li><a target="_blank" class="nav" href="contact_us.html">Contact-Us</a></li>
+
+    </ul>
+    <h1 id="abt">
+        About Us
+    </h1>
+    <div class="upperpart">
+        <div class="mainabt">
+
+            <h4>York Sports Club is an India based sports club.</h4>
+            <p>Founded in 2001 , York Sports club has been a leading sports club , providing best guidance and
+                coaching of different games .
+                It is open for everyone and we have tried to rejuvenate young generation by aiming them to the best
+                direction.
+                Our primary focus is to develop strategic long term relationships with our clients.
+            </p>
+        </div>
+        <div class="working">
+            <h4>Working with Us</h4>
+            <p>
+                Focused on growth, discipline and technique building with high performance, it is an exciting time to be
+                a
+                part of Yorka sports club.
+            </p>
+            <p>If you are interested in working for us, we would like to hear from you. Please send your
+                resume with a cover letter to: yorksportsclub@gmail.com</p>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="heading"><span>meet</span> Our Team</h1>
+        <div class="profiles">
+            <div class="profile">
+                <img src="profile_images_guy.png" class="profile-img">
+                <h3 class="user-name">Habibul Rahman</h3>
+            </div>
+            <div class="profile">
+                <img src="profile_images_guy.png" class="profile-img">
+                <h3 class="user-name">Rahul Sharma</h3>
+            </div>
+            <div class="profile">
+                <img src="profile_images_lady.png" class="profile-img">
+                <h3 class="user-name">Vinkle Devgan</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/c04a233785.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+	<div class="top">
+		<div>
+			<img class="image" src="1.jpg">
+			<img class="image" src="2.jpg">
+			<img class="image" src="3.jpg">
+			<img class="image" src="4.jpg">
+		</div>
+		<script>
+			var myIndex = 0;
+			imageloop();
+
+			function imageloop() {
+				var i;
+				var x = document.getElementsByClassName("image");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				myIndex++;
+				if (myIndex > x.length) { myIndex = 1 }
+				x[myIndex - 1].style.display = "block";
+				setTimeout(imageloop, 2000);
+			}
+			window.onscroll = () => {
+				searchForm.classList.remove('active');
+				if (window.scrollY > 80) {
+					document.querySelector('.bottom-navbar').classList.add('active');
+				}
+				else {
+					document.querySelector('.bottom-navbar').classList.remove('active');
+				}
+			}
+
+		</script>
+		<ul class="nav">
+			<li style="float:left">
+				<img style="height: 60px;" src="logo.png">
+			</li>
+			<li style="float:left">
+				<a target="_blank" href="about.html">York Sports Club</a>
+			</li>
+			<li><a target="_blank" href="sign_up_form.html">Subscription</a></li>
+			<!-- <li><a target="_blank" href="contact_us.html">Contact Us</a></li> -->
+			<li><a target="_blank" href="gallery.html">Gallery</a></li>
+			<!-- <li><a target="_blank" href="membership.html">Membership</a></li> -->
+			<!-- <li><a target="_blank" href="calender.html">Calender</a></li> -->
+		</ul>
+	</div>
+	<div class="columns">
+		<div class="column-left" style="margin: 20px;  border-right: 1px solid black;">
+			<h2 class="club">Clubs</h2>
+			<p>Cricket</p> 
+			<p>Volleball</p>
+			<p>Swimming</p>
+			<p>Football</p>
+			<p>Badminton</p>
+		</div>
+		<div class="column-right">
+			<a target="_blank" class="button" href="sign_up_form.html">Start Training Now</a>
+			<h1>About the club</h1>
+			_________________
+			<p>
+				York Sports Club is situated in one of England's most historic
+				and prestigious cities. It was established in 1966. <br>
+				It is the perfect place to spend time. We have great infrasctructure also available
+				for rent for venues. <br>
+				Cliftton Park Site is the main home of York Sports Club.<br>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="lower">
+		<h2 class="span"><span class="clubshead">Clubs Available</span></h2>
+		<div class="lower1">
+			<div class="game">
+				<h3 class="gamehead">Cricket</h3>
+				<img class="gameimg"
+					src="https://www.liveabout.com/thmb/hqNbf8KtYeQx0FqnHsvLaR8iupo=/5486x3110/filters:fill(auto,1)/cricket-bat--ball-and-wickets-in-cricket-ground--636479872-5b20323aeb97de0036a0bae2.jpg">
+				<h4 class="gameinfo">York Cricket Club has been in existence for over 200 years and has membership in
+					excess of 1000 players. It has also been a part of Yorkshire League.</h4>
+			</div>
+			<div class="game">
+				<h3 class="gamehead">Volleyball</h3>
+				<img class="gameimg"
+					src="https://tse1.mm.bing.net/th?id=OIP.ksIurUzUClRv_e4jB4n5VwHaFP&pid=Api&P=0&w=243&h=173">
+				<h4 class="gameinfo">York Volleyball Club has been in existence for over 200 years and has membership in
+					excess of 550 players. It has also been a part of National Club.</h4>
+			</div>
+			<div class="game">
+				<h3 class="gamehead">Swimming</h3>
+				<img class="gameimg" src="1.jpg">
+				<h4 class="gameinfo">York Swimming Club has been in existence for over 200 years and has membership in
+					excess of 550 players. It has also been a part of National Club.</h4>
+			</div>
+			<div class="game">
+				<h3 class="gamehead">Football</h3>
+				<img class="gameimg" src="4.jpg">
+				<h4 class="gameinfo">York Football Club has been in existence for over 200 years and has membership in
+					excess of 550 players. It has also been a part of Yorkshire League.</h4>
+			</div>
+			<!-- <div class="game">
+				<h3 class="gamehead">Badminton</h3>
+				<img class="gameimg" src="3.jpg">
+				<h4 class="gameinfo">York Badminton Club has been in existence for over 200 years and has membership in
+					excess of 550 players. It has also been a part of National Club.</h4>
+			</div> -->
+		</div>
+	</div>
+	<footer>
+		<p>yorksportsclub@gmail.com</p>
+		<p>Cliffton Park, ABC Road, XYZ</p>
+		<p>09876-54321</p>
+	</footer>
+	<nav class="bottom-navbar">
+        <a href="#home"><i class="fa-solid fa-house"></i></a>
+        <a href="#featured"><i class="fa-solid fa-list"></i></a>
+        <a href="#arrivals"><i class="fa-solid fa-tag"></i></a>
+        <a href="#reviews"><i class="fa-solid fa-comments"></i></a>
+        <a href="#blogs"><i class="fa-brands fa-blogger-b"></i></a>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>
+Form Practice
+</title>
+<link rel="stylesheet" href="paymentformstyle.css">
+<script>
+    function validation()
+ {
+ 
+    if( document.getElementById("name").value== "" )
+    {
+       alert( "Please provide your name!" );
+       document.getElementById("name").focus() ;
+       return false;
+    }
+    if( document.getElementById("dob").value== "" )
+    {
+       alert( "Please provide your dob!" );
+       document.getElementById("dob").focus() ;
+       return false;
+    }
+    if( document.getElementById("city").value== "" )
+    {
+       alert( "Please provide your city!" );
+       document.getElementById("city").focus() ;
+       return false;
+    }
+    if( document.getElementById("email").value == "" )
+         {
+            alert( "Please provide your Email!" );
+            document.getElementById("email").focus() ;
+            return false;
+         }
+     var email = document.getElementById("email").value;
+    atpos = email.indexOf("@");
+    dotpos = email.lastIndexOf(".");       
+    if (document.getElementById("email").value == "" || atpos < 1 || ( dotpos - atpos < 2 )) 
+    {
+       alert("Please enter correct email")
+       document.getElementById("email").focus() ;
+       return false;
+    }
+    if( document.getElementById("comp_date").value== "" )
+    {
+       alert( "Please provide your course completion year!" );
+       document.getElementById("comp_date").focus() ;
+       return false;
+    }
+           
+    if( document.getElementById("pin").value == "")
+    {
+       alert( "Please provide a pin code of your area!" );
+       document.getElementById("pin").focus() ;
+       return false;
+    }
+    
+    if( document.getElementById("t4").value == "-1" )
+    {
+       alert( "Please provide your country!" );
+       return false;
+    }
+    return( true );
+ }
+
+ </script>
+</head>
+
+<body>
+    <div class="container">
+<form  name="StudentForm" id="form" onsubmit="return(validation());"> 
+<h1>Student Form Validation</h1>
+<hr>
+<h2>User Information</h2>
+<p>NAME: * <input type="text" name="name" id="name" placeholder="Your Name"></p>
+<fieldset>
+<legend>GENDER</legend>
+<p>
+ Male <input type="radio" name"gender" id="male">
+Female <input type="radio" name"gender" id="female">
+</p>
+</fieldset>
+
+<p>
+DOB: * <input type="date" name="dob" id="dob">
+</p>
+
+<p>
+ADDRESS: <textarea name="address" id="address" cols="100" rows="8" placeholder="enter your address"></textarea>
+</p>
+
+<p>
+Email: * <input type="text" name="email" id="email" placeholder="Your Email here">
+</p>
+<p>City: * <input type="text" name="city" id="city" placeholder="Your City"></p>
+<p>
+PINCODE: * <input type="number" name="pin" id="pin" placeholder="Your Area Pincode here">
+</p>
+
+<p>
+COURSE *
+<select name="course_name" id="course_name" required >
+<option value="">--Select Course--</option>
+<option value="Btech">BTech</option>
+<option value="MBA">MBA</option>
+<option value="BSc">BSc</option>
+</select>
+</p> -->
+<p>
+COMPLETION YEAR: * <input type="date" name="comp_date" id="comp_date" >
+</p>
+
+<p>
+UMS Id: * <input type="number" name="id" id="id" placeholder="Your UMS Id here">
+</p>
+<p>
+UMS Id Password: * <input type="password" name="cvv" id="cvv" placeholder="Your UMS password here">
+</p>
+
+<p>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</p>
+</form>
+</div>
+
+
+</body>
+
+</html>

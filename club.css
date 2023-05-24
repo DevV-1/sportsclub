@@ -1,0 +1,27 @@
+.logo{
+    border:2px solid aqua;
+  background-image: url("logosports.jpg");
+    width:150px;
+}
+img{
+    height: 100%;
+    width:100%;
+}
+nav{
+   border:2px solid black;
+  float:left;
+  overflow:hidden;
+   padding:15px;
+background-color: aqua;
+}
+
+nav a{
+    color:black;
+    
+   text-align: center;
+    text-decoration:none;
+   
+    padding:8px;
+    font-size: 20px;
+}
+

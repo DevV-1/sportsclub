@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript variables</title>
+
+</head>
+
+<body>
+    <!-- <p>vinkle</p>
+    <p>devgan</p>
+    <p>sharma</p> -->
+    <ul>
+        <li>vink</li>
+        <li>dev</li>
+        <li>shar</li>
+    </ul>
+    <h1 id="line">Heading</h1>
+    <p>Click Submit button and see result.</p> 
+ <input type="button" onclick="getConfirmation()" value="Submit" />
+ <button onclick="fun()">Click</button>
+    <script>
+        document.getElementById("line").setAttribute("style", "color:aqua; background-color:blue; text-align:center;");
+        // var a=22;
+        // alert(a);
+        document.write("Hello ");
+        var name=prompt("What is your name");
+        document.write(name+"!<br>");
+        
+        var str = "hi hello & hi ";
+        document.write(str.indexOf("h", 4)) //index starts from 0
+        document.write("<br>")
+        document.write(str.replaceAll("h", "t"))
+        document.write("<br>")
+        document.write(str.toUpperCase())
+        var para = document.createElement("h3");
+        var node = document.createTextNode("this is a heading written using script");
+        para.append(node);
+        document.body.appendChild(para);
+        var lit = document.querySelector("ul");
+        console.log(lit.firstChild);
+        console.log(lit.lastChild);
+        document.write(window.location.href); //can have hostname, protocol, host,origin etc instead of href
+        document.write(window.location.protocol);
+function getConfirmation(){
+  var retVal = confirm("Do you want to continue?");
+  if( retVal == true ){
+       document.write ("User wants to continue!");
+        return true;
+   }
+   else{
+        document.write ("User does not want to continue!");
+        return false;
+    }
+
+   
+} 
+ function fun() {
+        window.location.assign("https://www.youtube.com/");
+        // or window.location="https://www.youtube.com/";
+    }
+    </script>
+</body>
+
+</html>

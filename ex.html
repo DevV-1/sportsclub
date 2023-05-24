@@ -1,0 +1,136 @@
+<!-- <html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initialscale=1.0">
+<title>Document</title>
+<style>
+body{
+padding-top: 150px;
+text-align: center;
+background-color:burlywood;
+}
+form{
+padding: 10px;
+}
+span{
+padding: 10px;
+}
+.division{
+border: 2px solid black;
+margin: 30px;
+border-radius: 20px ;
+}
+label{
+font-size: 30px;
+}
+input{
+width: 400px;
+height: 50px;
+border-radius: 10px;
+text-align: center;
+background-color:azure;
+font-size: 30px;
+margin: 20px;
+}
+button{
+margin: 20px;
+background-color: black;
+color: aliceblue;
+width: 300px;
+height: 50px;
+font-size: 20px;
+border-radius: 20px;
+}
+h4{
+font-size: 20px;
+}
+</style>
+</head>
+<body>
+<h1>3rd quest:</h1>
+<div class="main">
+<form id="form"> Form element</form>
+<span id="span"> Span element <br> <br> 
+<input id="text" type="text"> Text element </input>
+</span> 
+
+</div>
+<script>
+document.getElementById("text").addEventListener("click",function(){
+alert("text element"), false
+})
+document.getElementById("span").addEventListener("click",function(){
+alert("span element"), false
+})
+document.getElementById("from").addEventListener("click",function(){
+alert("from element"), false
+})
+ </script>
+</body>
+</html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Search Button</h2>
+
+<p>Full width:</p>
+<form class="example" action="/action_page.php">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+<p>Centered inside a form with max-width:</p>
+<form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+  <input type="text" placeholder="Search.." name="search2">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+</body>
+</html> 

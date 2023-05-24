@@ -1,0 +1,35 @@
+h1{
+    color:rgb(223, 32, 197);
+}
+h3{
+    color:#d3d626a7;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:700;
+}
+p{
+    color:burlywood;
+}
+ p span,p>em{ 
+    color:goldenrod;
+    background-color: cornsilk;
+    padding: 5px;
+}
+
+a:visited{
+    color:honeydew;
+
+}
+a:hover{
+    color:darkgreen;
+    text-decoration:black;
+}
+a:link{
+    color:ivory;
+    
+}
+li{
+    list-style-type: georgian;
+}
+li em{
+    color:dodgerblue;
+}

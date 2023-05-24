@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head>
+    <title>from</title>
+    <link rel="stylesheet" href="none.css">
+    <style>
+
+        .form {
+            margin:auto;
+            text-align: center;
+            border: black solid 2px;
+            background-color: antiquewhite;
+            /* text-align: left; */
+        }
+
+        .navi {
+            text-align: center;
+            background-color: aquamarine;
+            border: black solid 2px;
+        }
+
+        textarea {
+            background-color: aliceblue;
+            width: 200px;
+            height: 20px;
+        }
+
+        input[type=text],
+        input[type=password],
+        input[type=submit],
+        input[type=reset] {
+            background-color: aliceblue;
+        }
+
+        select {
+            background-color: aliceblue;
+        }
+
+        fieldset {
+            background-color: aliceblue;
+            width: 250px;
+            border-color: aqua;
+            /* text-align: center; */
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <form>
+            <p>FIRST NAME: <input type="text" name="fname" placeholder="first name" required></p>
+            <p>LAST NAME: <input type="text" name="lname" placeholder="last name" required></p>
+            <!-- <legend>GENDER</legend> -->
+            <p>
+            <fieldset>
+                <legend>GENDER:</legend>
+                Male <input type="radio" name"gender" id="male" required>
+                Female <input type="radio" name"gender" id="female" required>
+            </fieldset>
+            </p>
+            <p>
+                CITY
+                <select name="city" id="city">
+                    <option value="">Noida</option>
+                    <option value="CSE">Amritsar</option>
+                    <option value="Rupay">Delhi</option>
+                    <option value="mastercard">VC</option>
+                </select>
+            </p>
+
+
+            ADDRESS: <textarea name="address" id="address" cols="100" rows="8" placeholder="address"
+                required></textarea>
+            <p> PASSWORD: <input type="password" name="pass" id="pass" placeholder="password" required></p>
+            <p> CHOOSE A FILE: <input type="file" name="file" id="file" required></p>
+            <p><input type="checkbox" name="file" id="file" checked required>I agree to the terms and conditions</p>
+
+
+            <p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </p>
+            RELAX!
+        </form>
+    </div>
+    <nav class="navi">
+        <a href="#"> Home</a>
+        <a href="#"> Login</a>
+    </nav>
+</body>
+
+</html>

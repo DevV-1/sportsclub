@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <title>Gallery</title>
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  position: relative;
+}
+
+.ourimages {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.previous{
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+.next {
+  cursor: pointer;
+  position:absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.previous:hover
+{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.textbox {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.column {
+  float: left;
+  width: 12.5%;
+}
+
+.downimages:hover {
+  opacity: 1;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+  overflow: hidden;
+  background-color:#111;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:rgb(62, 250, 250);
+  border-radius: 5%;
+  color:black;
+}
+</style>
+</head>
+<body>
+	<ul>
+    <li style="float:left">
+      <img style="height: 60px;" src="logo.png">
+    </li>
+    <li style="float:left">
+      <a target="_blank" href="about.html">York Sports Club</a>
+    </li>
+    <li><a target="_blank" href="sign_up_form.html">Subscription</a></li>
+    <li><a target="_blank" href="contact_us.html">Contact Us</a></li>
+    <li><a target="_blank" href="calender.html">Calender</a></li>
+    <li><a target="_blank" href="membership.html">Membership</a></li>
+    <li><a target="_blank" href="index.html">Home</a></li>
+
+  </ul>
+<h2  style="font-size:250%; font-family:Candara; color:rgb(235, 155, 51);text-align:center;"><marquee><b>OUR CLUB'S GALLERY</b></marquee></h2>
+
+<div class="container">
+  <div class="ourimages">
+    <div class="numbertext">1 / 8</div>
+    <img src="images/areial view.jpg" style="width:100% ; height:450px;">
+  </div>
+
+  <div class="ourimages">
+    <div class="numbertext">2 / 8</div>
+    <img src="images/athletic.jpg" style="width:100% ; height:450px;">
+  </div>
+
+  <div class="ourimages">
+    <div class="numbertext">3 / 8</div>
+    <img src="images/basketball.jpg" style="width:100% ; height:450px ;">
+  </div>
+    
+  <div class="ourimages">
+    <div class="numbertext">4 / 8</div>
+    <img src="images/badminton.jpg" style="width:100% ; height:450px ;">
+  </div>
+
+  <div class="ourimages">
+    <div class="numbertext">5 / 8</div>
+    <img src="images/football.jpg" style="width:100% ; height:450px ;">
+  </div>
+    
+  <div class="ourimages">
+    <div class="numbertext">6 / 8</div>
+    <img src="images/squash.jpeg" style="width:100% ; height:450px ;">
+  </div>
+
+  <div class="ourimages">
+    <div class="numbertext">7 / 8</div>
+    <img src="images/golf.jpg" style="width:100% ; height:450px ;">
+  </div>
+
+  <div class="ourimages">
+    <div class="numbertext">8 / 8</div>
+    <img src="images/Cricket.jpg" style="width:100% ; height:450px ;">
+  </div>
+    
+  <a class="previous" onclick="forwimages(-1)">&#8249;</a>
+  <a class="next" onclick="forwimages(1)">&#8250;</a>
+
+  <div class="textbox">
+    <p id="heading"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="downimages cursor" src="images/areial view.jpg" style="width:100%" onclick="currentSlide(1)" alt="AREIAL VIEW OF CLUB">
+    </div>
+    <div class="column">
+      <img class="downimages cursor" src="images/athletic.jpg" style="width:100%" onclick="currentSlide(2)" alt="ATHLETIC TRACKS">
+    </div>
+    <div class="column">
+      <img class="downimages cursor" src="images/basketball.jpg" style="width:100%" onclick="currentSlide(3)" alt="BASKETBALL COURT">
+    </div>
+    <div class="column">
+      <img class="downimages cursor" src="images/badminton.jpg" style="width:100%" onclick="currentSlide(4)" alt="BADMINTON COURT">
+    </div>
+    <div class="column">
+      <img class="downimages cursor" src="images/football.jpg" style="width:100%" onclick="currentSlide(5)" alt="FOOTBALL GROUND">
+    </div>    
+    <div class="column">
+      <img class="downimages cursor" src="images/squash.jpg" style="width:100%" onclick="currentSlide(6)" alt="SQUASH COURT">
+    </div>
+    <div class="column">
+      <img class="downimages cursor" src="images/golf.jpg" style="width:100%" onclick="currentSlide(7)" alt="GOLF COURSE">
+    </div>
+    <div class="column">
+      <img class="downimages cursor" src="images/cricket.jpg"  style="width:100%" onclick="currentSlide(8)" alt="CRICKET GROUND">
+    </div>
+  </div>
+</div>
+
+<script>
+var imagenumber = 1;
+showimages(imagenumber);
+
+function forwimages(n) {
+  showimages(imagenumber= imagenumber+ n);
+}
+
+function currentSlide(n) {
+  showimages(imagenumber = n);
+}
+
+function showimages(n) {
+  var i;
+  var images = document.getElementsByClassName("ourimages");
+  var smallimages = document.getElementsByClassName("downimages");
+  var headingText = document.getElementById("heading");
+  if (n > images.length) {imagenumber = 1} 
+  if (n < 1) {imagenumber = images.length}
+  for (i = 0; i < images.length; i++) {
+      images[i].style.display = "none";
+  }
+  for (i = 0; i < smallimages.length; i++) {
+  }
+  images[imagenumber-1].style.display = "block";
+  headingText.innerHTML = smallimages[imagenumber-1].alt;
+}
+</script>
+    
+</body>
+</html>
